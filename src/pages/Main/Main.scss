@@ -1,0 +1,27 @@
+@import "../../styles/variables.scss";
+
+.mainContainer {
+  @include flex-center;
+  min-height: 100vh;
+
+  .contentsContainer {
+    border: 1px solid black;
+    @include flex-center;
+    flex-direction: column;
+
+    h1 {
+      font-size: xx-large;
+      font-weight: bold;
+    }
+
+    h2 {
+      font-size: x-large;
+      font-weight: bold;
+    }
+
+    h3 {
+      color: blue;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@import "../../styles/variables.scss";
+
+.loginContainer {
+  @include flex-center;
+  min-height: 100vh;
+
+  .loginFormContainer {
+    @include flex-center;
+    flex-direction: column;
+    width: 20rem;
+    padding: 3rem;
+    border: 1px solid black;
+
+    h1 {
+      font-size: xx-large;
+      font-weight: bold;
+    }
+
+    .idInput {
+      @include flex-center;
+      flex-direction: column;
+      margin: 0.3rem;
+
+      .id {
+        display: flex;
+        justify-content: flex-start;
+        text-align: start;
+      }
+    }
+
+    .pwInput {
+      @include flex-center;
+      flex-direction: column;
+      margin: 0.3rem;
+    }
+
+    .loginOrSignUp {
+      @include flex-center;
+      margin: 0.3rem;
+      padding: 0.2rem;
+
+      button {
+        margin: 0.3rem;
+      }
+    }
+  }
+}
