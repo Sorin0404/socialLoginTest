@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 import { GOOGLE_AUTH_URL } from "./components/GoogleLoginAuth";
+import { APPLE_AUTH_URL } from "./components/AppleLoginAuth";
 
 import "./Login.scss";
 
@@ -22,7 +23,7 @@ const Login = () => {
         </div>
         <div className="loginOrSignUp">
           <button onClick={() => navigate(GOOGLE_AUTH_URL)}>구글 로그인</button>
-          <button>애플 로그인</button>
+          <button onClick={() => navigate(APPLE_AUTH_URL)}>애플 로그인</button>
         </div>
       </div>
     </div>
