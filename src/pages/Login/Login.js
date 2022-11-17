@@ -1,8 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
+import { GOOGLE_AUTH_URL } from "./components/GoogleLoginAuth";
 
 import "./Login.scss";
 
 const Login = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="loginContainer">
       <div className="loginFormContainer">
@@ -16,7 +21,7 @@ const Login = () => {
           <input></input>
         </div>
         <div className="loginOrSignUp">
-          <button>구글 로그인</button>
+          <button onClick={() => navigate(GOOGLE_AUTH_URL)}>구글 로그인</button>
           <button>애플 로그인</button>
         </div>
       </div>
