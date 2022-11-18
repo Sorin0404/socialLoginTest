@@ -7,7 +7,7 @@ const AppleLogin = () => {
 
   // fetch url 수정 필요
   const getToken = () => {
-    fetch(`https://localhost:3000?code=${code}`, {
+    fetch(`https://localhost:3000?/code=${code}`, {
       method: "GET",
     })
       .then((res) => {
@@ -16,6 +16,7 @@ const AppleLogin = () => {
           return res.json();
         } else {
           alert("로그인에 실패했습니다.");
+          console.log(res);
           navigate("/");
         }
       })
